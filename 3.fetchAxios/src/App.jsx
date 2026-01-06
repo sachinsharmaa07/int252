@@ -19,11 +19,15 @@ function App() {
     <h1>Users List </h1>
    <ul>
     {
-      usrs2.map((usr)=>(
-        <li key={usr.id}>{usr.name} - {usr.email}</li>
+      usrs.map((usr)=>(
+        <li key={usr.id}>{usr.name}{usr.email}</li>
       ))
     }
-
+    {
+      usrs2.map((usr)=>(
+        <li key={usr.id}>{usr.name}{usr.email}</li>
+      ))
+    }
    </ul>
     </>
   )
